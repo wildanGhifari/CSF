@@ -29,6 +29,18 @@
   font-size: large;
 }
 
+.myRound {
+  border-radius: 16px
+}
+
+.searchBar {
+  width: 100%;
+}
+
+.navbarCategory {
+  box-shadow: 0px 0px 16px rgba(17,17,26,0.1);
+}
+
 @import url('https://fonts.googleapis.com/css?family=Poppins:400');
 
 html {font-size: 87.5%;} /*14px*/
@@ -76,7 +88,7 @@ small, .text_small {font-size: 0.8rem;}
   min-height: 100vh;
 }
 
-#auth input, button {
+#auth input, #auth button {
   border-radius: 16px !important;
 }
 
@@ -97,6 +109,12 @@ small, .text_small {font-size: 0.8rem;}
   margin: auto;
   padding: 48% 0;
 }
+
+.loginBtn {
+      margin-right: 0;
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
 
 .login h3 {
   font-weight: 700;
@@ -149,8 +167,18 @@ small, .text_small {font-size: 0.8rem;}
 }
 /* Auth End */
 
+/* Navbar Start */
+.mobileTopBar {
+  position: relative;
+  margin-left: auto;
+  margin-right: 16px;
+  display: block;
+}
+/* Navbar End */
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
+
     @import url('https://fonts.googleapis.com/css?family=Poppins:400');
 
     html {font-size: 87.5%;} /*14px*/
@@ -190,6 +218,7 @@ small, .text_small {font-size: 0.8rem;}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
+
     @import url('https://fonts.googleapis.com/css?family=Poppins:400');
 
     html {font-size: 112.5%;} /*18px*/
@@ -226,8 +255,8 @@ small, .text_small {font-size: 0.8rem;}
 
     small, .text_small {font-size: 0.8rem;}
 
-    /* Login page Start */
-    #login {
+    /* Auth Start */
+    #auth {
       height: 100vh;
     }
 
@@ -250,12 +279,6 @@ small, .text_small {font-size: 0.8rem;}
     .login form {
       width: 40%;
       margin: auto;
-    }
-    /* Login page End */
-
-    /* Signup page Start */
-    #signup {
-      height: 100vh;
     }
 
     .signupHero {
@@ -282,15 +305,24 @@ small, .text_small {font-size: 0.8rem;}
       width: 40%;
       margin: auto;
     }
-    /* Signup page End */
+    /* Auth End */
+
+    /* Navbar Start */
+    .mobileTopBar {
+      display: none !important;
+    }
+    /* Navbar End */
  }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-    
- }
+    .searchBar {
+      width: 50%;
+    }
 
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-    
+    .loginBtn {
+      margin-right: 16px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
  }
