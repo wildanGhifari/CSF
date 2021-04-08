@@ -65,15 +65,19 @@ h5 {font-size: 1.25rem;}
 
 small, .text_small {font-size: 0.8rem;}
 
-/* Login page Start */
+/* Auth Start */
 .backToHome {
   position: absolute;
   top: 16px;
   right: 16px;
 }
 
-#login {
+#auth {
   min-height: 100vh;
+}
+
+#auth input, button {
+  border-radius: 16px !important;
 }
 
 .loginHero {
@@ -106,12 +110,6 @@ small, .text_small {font-size: 0.8rem;}
 .login button {
   width: 100% !important;
   margin-top: 24px;
-}
-/* Login page End */
-
-/* Signup page Start */
-#signup {
-  min-height: 100vh;
 }
 
 .signupHero {
@@ -149,7 +147,7 @@ small, .text_small {font-size: 0.8rem;}
   width: 100% !important;
   margin-top: 24px;
 }
-/* Signup page End */
+/* Auth End */
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
@@ -236,10 +234,10 @@ small, .text_small {font-size: 0.8rem;}
     .loginHero {
       min-height: 100vh;
       display: block;
-      background-image: url(/assets/img/illustration/Eating\ healthy\ food-cuate.svg);
+      background-image: url(/assets/img/photos/nathan-dumlao-rWcza92CapI-unsplash.jpg);
       background-position: center;
       background-repeat: no-repeat;
-      background-size:contain;
+      background-size:cover;
     }
 
     .login {
@@ -263,10 +261,10 @@ small, .text_small {font-size: 0.8rem;}
     .signupHero {
       min-height: 100vh;
       display: block;
-      background-image: url(/assets/img/illustration/Online\ Groceries-cuate.svg);
+      background-image: url(/assets/img/photos/margarita-zueva-aDxzwSmY90A-unsplash.jpg);
       background-position: center;
       background-repeat: no-repeat;
-      background-size:contain;
+      background-size:cover;
     }
 
     .signupHero h5 {
