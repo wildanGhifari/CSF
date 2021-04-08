@@ -27,33 +27,34 @@
                     <small><a href="https://storyset.com/business">Illustration by Freepik Storyset</a></small>
                 </div>
                 <div class="signup col-md-8">
-                    <div>
+                    <a class="backToHome btn btn-outline-dark" href="home.html">Back to Home</a>
+                    <div class="container">
                         <h3>Join as a Member, it's Free</h3>
-                        <p>Already have an Account? <a href="login.html">Login here</a></p>
+                        <p>Already have an Account? <a class="text-success" href="login.html">Login here</a></p>
+                    
+                        <form class="mt-5" method="post" action="">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com" required>
+                                <label for="floatingInput">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="floatingPassword"
+                                    placeholder="Create Password" required>
+                                <label for="floatingPassword">Create Password</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingConfirmPassword"
+                                    placeholder="Confirm Password" required>
+                                <label for="floatingConfirmPassword">Confirm Password</label>
+                            </div>
+
+                            <button type="submit" class="btn CSF-PrimaryButton">Sign up</button>
+                            <div class="mt-4">
+                                <p>By signing up for CSF, you agree with our <a class="text-success" href="#">Privacy Policy</a> & <a class="text-success" href="#">Terms of Service</a></p>
+                            </div>
+                        </form>
                     </div>
-
-                    <form class="mt-5" method="post" action="">
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput"
-                                placeholder="name@example.com" required>
-                            <label for="floatingInput">Email address</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="password" class="form-control" id="floatingPassword"
-                                placeholder="Create Password" required>
-                            <label for="floatingPassword">Create Password</label>
-                        </div>
-                        <div class="form-floating">
-                            <input type="password" class="form-control" id="floatingConfirmPassword"
-                                placeholder="Confirm Password" required>
-                            <label for="floatingConfirmPassword">Confirm Password</label>
-                        </div>
-
-                        <button type="submit" class="btn CSF-PrimaryButton">Sign up</button>
-                        <div class="mt-4">
-                            <p>By signing up for CSF, you agree with our <a href="#">Privacy Policy</a> & <a href="#">Terms of Service</a></p>
-                        </div>
-                    </form>
                 </div>
             </div>
         </div>

@@ -66,6 +66,12 @@ h5 {font-size: 1.25rem;}
 small, .text_small {font-size: 0.8rem;}
 
 /* Login page Start */
+.backToHome {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
 #login {
   min-height: 100vh;
 }
@@ -90,10 +96,6 @@ small, .text_small {font-size: 0.8rem;}
 
 .login h3 {
   font-weight: 700;
-}
-
-.login a {
-  color: var(--CSF-Green-1);
 }
 
 .login form {
@@ -136,10 +138,6 @@ small, .text_small {font-size: 0.8rem;}
 
 .signup h3 {
   font-weight: 700;
-}
-
-.signup a {
-  color: var(--CSF-Green-1);
 }
 
 .signup form {
