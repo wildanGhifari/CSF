@@ -67,16 +67,13 @@ small, .text_small {font-size: 0.8rem;}
 
 /* Login page Start */
 #login {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .loginHero {
-  min-height: 50vh;
+  display: none;
+  min-height: 100vh;
   background-color: var(--CSF-Green-3);
-  background-image: url(/assets/img/illustration/Eating\ healthy\ food-cuate.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size:cover
 }
 
 .loginHero a {
@@ -85,8 +82,10 @@ small, .text_small {font-size: 0.8rem;}
 }
 
 .login {
+  min-height: 100vh;
   text-align: center;
   margin: auto;
+  padding: 48% 0;
 }
 
 .login h3 {
@@ -107,6 +106,52 @@ small, .text_small {font-size: 0.8rem;}
   margin-top: 24px;
 }
 /* Login page End */
+
+/* Signup page Start */
+#signup {
+  min-height: 100vh;
+}
+
+.signupHero {
+  display: none;
+  min-height: 100vh;
+  background-color: var(--CSF-Green-3);
+}
+
+.signupHero a {
+  color: var(--CSF-Green-1);
+  text-decoration: none;
+}
+
+.signupHero h5 {
+  margin: auto;
+}
+
+.signup {
+  min-height: 100vh;
+  text-align: center;
+  margin: auto;
+  padding: 48% 0;
+}
+
+.signup h3 {
+  font-weight: 700;
+}
+
+.signup a {
+  color: var(--CSF-Green-1);
+}
+
+.signup form {
+  width: 80%;
+  margin: auto;
+}
+
+.signup button {
+  width: 100% !important;
+  margin-top: 24px;
+}
+/* Signup page End */
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
@@ -192,11 +237,18 @@ small, .text_small {font-size: 0.8rem;}
 
     .loginHero {
       min-height: 100vh;
+      display: block;
+      background-image: url(/assets/img/illustration/Eating\ healthy\ food-cuate.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size:contain;
     }
 
     .login {
+      min-height: unset;
       text-align: center;
-      margin: auto;
+      margin: auto !important;
+      padding: unset;
     }
 
     .login form {
@@ -204,6 +256,37 @@ small, .text_small {font-size: 0.8rem;}
       margin: auto;
     }
     /* Login page End */
+
+    /* Signup page Start */
+    #signup {
+      height: 100vh;
+    }
+
+    .signupHero {
+      min-height: 100vh;
+      display: block;
+      background-image: url(/assets/img/illustration/Online\ Groceries-cuate.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size:contain;
+    }
+
+    .signupHero h5 {
+      margin: auto;
+    }
+
+    .signup {
+      min-height: unset;
+      text-align: center;
+      margin: auto !important;
+      padding: unset;
+    }
+
+    .signup form {
+      width: 40%;
+      margin: auto;
+    }
+    /* Signup page End */
  }
 
 /* Large devices (desktops, 992px and up) */
